@@ -14,6 +14,7 @@
     "morgan": "~1.5.1",
     "mongoose": "~3.8.14",
     "json2csv": "~2.4.3",
+    "excel-export": "~0.4.1",
     "serve-favicon": "~2.2.0"
   }
 }

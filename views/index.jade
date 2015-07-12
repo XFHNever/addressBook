@@ -12,7 +12,7 @@ block content
     .jumbotron
       button(type='button', class='btn btn-primary')&attributes({'data-toggle': 'modal'},{'data-target':'#createModal'})
         span(class='glyphicon glyphicon-plus')&attributes({'aria-hidden': 'true'}) 新增
-      //button(type='button', class='btn btn-primary', id='download')&attributes({'onclick':'output();'})
+      //button(type='button', class='btn btn-primary', id='download')
         span(class='glyphicon glyphicon-save')&attributes({'aria-hidden': 'true'}) 导出
 
       if students && students.length > 0
@@ -26,6 +26,7 @@ block content
               th 邮箱
               th 所在城市
               th 单位/学校
+              th 删除
           tbody
               each student in students
                 tr
@@ -36,6 +37,8 @@ block content
                   td=student.email
                   td=student.city
                   td=student.enterprise
+                  td
+                    a(href='/delete/' + student._id) Delete
       else
         hr
         p 还没有任何信息，快点第一个来填写吧～

@@ -4,9 +4,10 @@
             $('#download').on('click', function() {
                 $.ajax({
                     url: '/download',
-                    type: 'post',
+                    type: 'get',
                     success: function(data) {
                         alert('test');
+                        window.location = '/download';
                     }
                 });
             });
