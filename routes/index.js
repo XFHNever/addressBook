@@ -39,6 +39,7 @@ router.post('/create', function(req, res, next) {
       res.render('index', { students: students});
     });
   });
+  res.redirect('/');
 });
 
 router.get('/download', function(req, res, next) {
@@ -93,6 +94,7 @@ router.get('/delete/:id', function(req, res, next) {
       res.render('index', { students: students});
     });
   });
+  res.redirect('/');
 });
 
 module.exports = router;
