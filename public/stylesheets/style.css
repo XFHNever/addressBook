@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.jumbotron{
+  min-height: 500px;
+}
+.jumbotron span{
+  margin-right: 5px;
+}
+.jumbotron button{
+  margin-right: 5px;
+}
+table{
+  margin-top: 20px;
+  text-align: center;
+}
+table th{
+  text-align: center;
+}
+#footer p{
+  text-align: right;
+}
