@@ -3,3 +3,6 @@ target/
 *.iml
 mockFile
 .idea/
+node_modules
+npm-debug.log
+bower_components
