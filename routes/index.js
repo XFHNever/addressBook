@@ -24,6 +24,7 @@ router.post('/create', function(req, res, next) {
   student.phone = req.body.phone;
   student.qq = req.body.qq;
   student.wechat = req.body.wechat;
+  student.pay = req.body.pay;
   student.email = req.body.email;
   student.city = req.body.city;
   student.enterprise = req.body.enterprise;
@@ -32,12 +33,13 @@ router.post('/create', function(req, res, next) {
     if(err) {
       res.send(err);
     }
-    Student.find(function (err, students) {
-      if(err) {
-        res.send(err);
-      }
-      res.render('index', { students: students});
-    });
+    return;
+    //Student.find(function (err, students) {
+    //  if(err) {
+    //    res.send(err);
+    //  }
+    //  res.render('index', { students: students});
+    //});
   });
   res.redirect('/');
 });
@@ -86,13 +88,13 @@ router.get('/delete/:id', function(req, res, next) {
     if(err) {
       res.send(err);
     }
-
-    Student.find(function (err, students) {
-      if(err) {
-        res.send(err);
-      }
-      res.render('index', { students: students});
-    });
+    return;
+    //Student.find(function (err, students) {
+    //  if(err) {
+    //    res.send(err);
+    //  }
+    //  res.render('index', { students: students});
+    //});
   });
   res.redirect('/');
 });

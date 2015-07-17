@@ -10,6 +10,7 @@ var StudentSchema = new Schema({
     phone: String,
     qq: String,
     wechat: String,
+    pay: String,
     email: String,
     city: String,
     enterprise: String
