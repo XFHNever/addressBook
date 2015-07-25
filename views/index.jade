@@ -54,32 +54,40 @@ block content
             span(aria-hidden='true') &times;
             span.sr-only Close
           h4.modal-title='填写信息'
-        form&attributes({'method': 'post'}, {'action': '/create'})
+        form.form-horizontal&attributes({'method': 'post'}, {'action': '/create'})
           .modal-body
               .form-group
-                label 姓名
-                input.form-control(name='name')
+                label.col-sm-2.control-label 姓名
+                .col-sm-10
+                  input.form-control(name='name')
               .form-group
-                label 手机号
-                input.form-control(name='phone')
+                label.col-sm-2.control-label 手机号
+                .col-sm-10
+                  input.form-control(name='phone')
               .form-group
-                label QQ
-                input.form-control(name='qq')
+                label.col-sm-2.control-label QQ
+                .col-sm-10
+                  input.form-control(name='qq')
               .form-group
-                label 微信号
-                input.form-control(name='wechat')
+                label.col-sm-2.control-label 微信号
+                .col-sm-10
+                  input.form-control(name='wechat')
               .form-group
-                label 支付宝
-                input.form-control(name='pay')
+                label.col-sm-2.control-label 支付宝
+                .col-sm-10
+                  input.form-control(name='pay')
               .form-group
-                label 邮箱
-                input.form-control(name='email')
+                label.col-sm-2.control-label 邮箱
+                .col-sm-10
+                  input.form-control(name='email')
               .form-group
-                label 所在城市
-                input.form-control(name='city')
+                label.col-sm-2.control-label 所在城市
+                .col-sm-10
+                  input.form-control(name='city')
               .form-group
-                label 单位/学校
-                input.form-control(name='enterprise')
+                label.col-sm-2.control-label 单位/学校
+                .col-sm-10
+                  input.form-control(name='enterprise')
           .modal-footer
             button(type='button', class='btn btn-btn-default')&attributes({'data-dismiss': 'modal'}) 关闭
             button(type='submit', class='btn btn-primary') 保存
