@@ -1,6 +1,8 @@
 (function(window, $, undefined){
 	var mockService = {
         attachEvent: function attachEvent() {
+            console.log('Designed by xfhenver, contact by email: xfhnever@gmail.com');
+
             $('#download').on('click', function() {
                 $.ajax({
                     url: '/download',
