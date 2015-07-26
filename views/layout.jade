@@ -3,10 +3,17 @@ html
   head
     title 电子科大2011级微固应用化学1班通讯录
     meta&attributes({'name': 'developer'}, {'content': 'xfhnever@gmail.com'})
+    <!--[if lt IE 8]>
+    link(rel='stylesheet',href='/stylesheets/bootstrap-ie7fix.min.css')
+    <![endif]-->
     link(rel='stylesheet', href='//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    <!--[if lt IE 9]>
+    script(src='/javascripts/html5shiv.js')
+    script(src='/javascripts/respond.min.js')
+    <![endif]-->
     script(src='//cdn.bootcss.com/jquery/2.1.4/jquery.min.js')
     script(src='//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js')
     block extraJS
